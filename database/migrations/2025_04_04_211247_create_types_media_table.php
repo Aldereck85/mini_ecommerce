@@ -14,8 +14,6 @@ return new class extends Migration
         Schema::create('types_media', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->unsignedInteger('width');
-            $table->unsignedInteger('height');
             $table->timestamps();
         });
     }

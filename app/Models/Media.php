@@ -3,17 +3,22 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Media extends Model
 {
-    protected $fillable = [
+    use HasFactory;
+    
+    protected $fillable = 
+    [
         'name',
         'location_id',
         'type_id',
         'price_day',
     ];
 
-    protected $casts = [
+    protected $casts = 
+    [
         'price_day' => 'decimal:2',
     ];
 

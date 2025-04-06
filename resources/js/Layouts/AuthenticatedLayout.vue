@@ -60,6 +60,7 @@ const logout = () => {
 
                                                 <span v-if="user">
                                                     {{ user.name }}
+                                                    
                                                 </span>
                                                 <span v-else>
                                                     <Link :href="route('login')" class="text-blue-500">Login</Link>
